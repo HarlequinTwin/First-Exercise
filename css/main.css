@@ -1,0 +1,29 @@
+/*  Programmer : Rebekka Sparrow
+    File Type   : CSS
+    Date Created: Jan. 22, 2017
+    Date Updated: Jan. 22, 2017 */
+
+html,
+body,
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 20px;
+    text-decoration: underline;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+p {
+    margin: 20px;
+    justify-content: center;
+}
