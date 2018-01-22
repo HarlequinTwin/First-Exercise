@@ -22,6 +22,38 @@
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+    <!-- the script tag contains or loads javaScript code -->
+    <script>
+        // ask for user's name and keep it for later use
+        var userName = prompt('Hello my friend. What is your name?');
+
+        // personalize the h1 with the user's name
+        document.write('<h1>' + userName + "'s Page</h1>");
+
+        //ask if user wishes to change page colours
+        //save their answer for later use
+        var changeColor = confirm('Display your page with brilliant colours?');
+
+        // if the answer is yes
+        if (changeColor) {
+
+            //change background and foreground colours of page
+            document.body.style.backgroundColor = 'cyan';
+            document.body.style.color = '#F00080';
+
+            // add a personalized paragraph confirming colour change
+            document.write('<p>Ok ' + userName + '. Brilliant colours it is.</p>');
+
+        }
+
+        // if they said no
+        else {
+
+            // add a personalized paragraph confirming status quo
+            document.write('<p>Ok ' + userName + '. Boring colours it is.</p>')
+        }
+
+    </script>
 </body>
 
 </html>
